@@ -1,7 +1,10 @@
 # Rate traits are deliberately class-limited. All share the same opposition set, so one leader cannot acquire two Rates.
 leader_trait_forerunner_rate_builder = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
 	leader_class = { scientist official }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder_security leader_trait_forerunner_rate_miner leader_trait_forerunner_rate_lifeworker leader_trait_forerunner_rate_juridical leader_trait_forerunner_rate_engineer leader_trait_forerunner_rate_warrior_servant leader_trait_forerunner_rate_promethean }
 	requires_traits = { trait_forerunner_species }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } planet_building_build_speed_mult = 0.15 megastructure_build_speed_mult = 0.15 empire_size_penalty_mult = -0.10 country_engineering_research_produces_mult = 0.10 }
@@ -11,8 +14,11 @@ leader_trait_forerunner_rate_builder = {
 	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_builder_security = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
 	leader_class = { commander }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder leader_trait_forerunner_rate_miner leader_trait_forerunner_rate_lifeworker leader_trait_forerunner_rate_juridical leader_trait_forerunner_rate_engineer leader_trait_forerunner_rate_warrior_servant leader_trait_forerunner_rate_promethean }
 	requires_traits = { trait_forerunner_species }
 	fleet_modifier = { ship_hull_mult = 0.10 ship_armor_mult = 0.10 starbase_damage_mult = 0.15 }
@@ -21,8 +27,11 @@ leader_trait_forerunner_rate_builder_security = {
 	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_miner = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
 	leader_class = { scientist official }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder leader_trait_forerunner_rate_builder_security leader_trait_forerunner_rate_lifeworker leader_trait_forerunner_rate_juridical leader_trait_forerunner_rate_engineer leader_trait_forerunner_rate_warrior_servant leader_trait_forerunner_rate_promethean }
 	requires_traits = { trait_forerunner_species }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } terraforming_cost_mult = -0.20 megastructure_build_speed_mult = 0.10 country_minerals_produces_mult = 0.10 }
@@ -31,8 +40,11 @@ leader_trait_forerunner_rate_miner = {
 	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_lifeworker = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
 	leader_class = { scientist official }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder leader_trait_forerunner_rate_builder_security leader_trait_forerunner_rate_miner leader_trait_forerunner_rate_juridical leader_trait_forerunner_rate_engineer leader_trait_forerunner_rate_warrior_servant leader_trait_forerunner_rate_promethean }
 	requires_traits = { trait_forerunner_species }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } category_biology_research_speed_mult = 0.15 pop_growth_speed = 0.10 biological_pop_happiness = 0.05 }
@@ -41,8 +53,11 @@ leader_trait_forerunner_rate_lifeworker = {
 	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_juridical = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
 	leader_class = { official }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder leader_trait_forerunner_rate_builder_security leader_trait_forerunner_rate_miner leader_trait_forerunner_rate_lifeworker leader_trait_forerunner_rate_engineer leader_trait_forerunner_rate_warrior_servant leader_trait_forerunner_rate_promethean }
 	requires_traits = { trait_forerunner_species }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } planet_stability_add = 8 planet_crime_add = -20 pop_government_ethic_attraction = 0.10 }
@@ -51,8 +66,11 @@ leader_trait_forerunner_rate_juridical = {
 	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_engineer = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
 	leader_class = { scientist official }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder leader_trait_forerunner_rate_builder_security leader_trait_forerunner_rate_miner leader_trait_forerunner_rate_lifeworker leader_trait_forerunner_rate_juridical leader_trait_forerunner_rate_warrior_servant leader_trait_forerunner_rate_promethean }
 	requires_traits = { trait_forerunner_species }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } planet_structures_cost_mult = -0.15 ships_upkeep_mult = -0.10 planet_pops_robotics_upkeep_mult = -0.10 }
@@ -61,8 +79,11 @@ leader_trait_forerunner_rate_engineer = {
 	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_warrior_servant = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/leader_trait_ruler_forerunner_didact.dds"
 	leader_class = { commander }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder leader_trait_forerunner_rate_builder_security leader_trait_forerunner_rate_miner leader_trait_forerunner_rate_lifeworker leader_trait_forerunner_rate_juridical leader_trait_forerunner_rate_engineer leader_trait_forerunner_rate_promethean }
 	requires_traits = { trait_forerunner_species }
 	fleet_modifier = { ship_weapon_damage = 0.10 ship_weapon_range_mult = 0.10 command_limit_add = 10 }
@@ -71,8 +92,11 @@ leader_trait_forerunner_rate_warrior_servant = {
 	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_promethean = {
+	cost = 0
+	starting_ruler_trait = yes
 	icon = "gfx/interface/icons/traits/leader_trait_ruler_forerunner_didact.dds"
 	leader_class = { commander }
+	requires_governments = { gov_ecumene_council }
 	opposites = { leader_trait_forerunner_rate_builder leader_trait_forerunner_rate_builder_security leader_trait_forerunner_rate_miner leader_trait_forerunner_rate_lifeworker leader_trait_forerunner_rate_juridical leader_trait_forerunner_rate_engineer leader_trait_forerunner_rate_warrior_servant }
 	requires_traits = { trait_forerunner_species }
 	fleet_modifier = { ship_weapon_damage = 0.15 ship_fire_rate_mult = 0.10 ship_weapon_range_mult = 0.10 command_limit_add = 20 }

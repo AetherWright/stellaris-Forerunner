@@ -11,6 +11,7 @@ auth_forerunner_ecumene = {
 	emergency_election_cost = 250
 	max_election_candidates = 4
 	has_agendas = yes
+	ruler_council_position = councilor_ruler_oligarchic
 	can_reform = yes
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
