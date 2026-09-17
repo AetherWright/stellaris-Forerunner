@@ -1,0 +1,354 @@
+### Halo Created
+
+created = {
+	category = "Machine"
+	should_name_home_system_planets = no
+	
+	ship_names = {
+
+		generic = {
+		}
+
+		corvette = {
+			"Z-1800 Phaeton" Despair Seeker Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+		
+		destroyer = {
+			Preservation Harrier Dignity Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+		
+		cruiser = {
+			Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+		
+		battleship = {
+			Guardian Fortress Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+
+		titan = {
+			Fortress Sojourner Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+
+		colossus = {
+			"Planet-breaker" Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+
+		juggernaut = {
+			"Mantle's Approach" Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+		
+		science = {
+			Audacity Surveyor Investigator Examiner Elucidator Voyager Scholar Analyst
+		}
+		
+		colonizer = {
+			Keyship Founder Spawner Seeder Inductor Developer "Seeding Star" 
+		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Replicator Founder Spawner Seeder Inductor Developer
+		}
+		
+		constructor = {
+			Assembler Fabricator Compiler Builder
+		}
+
+		transport = {
+			Gargantua "Z-330" Convoy Conveyor
+		}
+	
+		military_station_small = {
+			Protector Aspis Castellan 
+		}
+
+		ion_cannon = {
+			Peacekeeper
+		}
+
+		### For Fallen Empires
+		small_ship_fallen_empire = {
+			Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+		large_ship_fallen_empire = {
+			Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+		massive_ship_fallen_empire = {
+			Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+			"Suppression Fleet" "Security Fleet" "Emergency Circumstance Fleet" "Inductor" "Cogent" "Determinant" "Extremum" "Terminus" "Boundless" "Intercept" "Solution" "Ordinate" "Axis" "Outcome" "Limit" "Integral" "Helix" "Derivator" "Constant" "Directrix" "Apex" "Apothem" "Moment"
+		}
+		sequential_name = H_FORERUNNER_CREATED_FLEET_SEQ
+	}
+	
+	army_names = {
+		
+		machine_assault_1 = {
+			sequential_name = H_CREATED_PROMETHEAN_CRAWLERS_ORD
+		}
+
+		machine_defense = {
+			sequential_name = H_CREATED_PROMETHEAN_WATCHERS_ORD
+		}
+		
+		machine_assault_2 = {
+			sequential_name = H_CREATED_PROMETHEAN_KNIGHTS_ORD
+		}
+	
+		machine_assault_3 = {
+			sequential_name = H_CREATED_PROMETHEAN_SEEKERS_ORD
+		}
+	
+		defense_army = {
+			sequential_name = H_CREATED_ARMIGER_ARMY_ORD
+		}
+			
+		assault_army = {
+			sequential_name = H_CREATED_ARMY_GENEWARRIOR_ORD
+		}
+		
+		clone_army = {
+			sequential_name = H_CREATED_ARMY_CLONE_ORD
+		}
+		
+		undead_army = {
+			sequential_name = H_CREATED_UNDEAD_ARMY_ORD 
+		}
+
+		machine_occupation_army = {
+			sequential_name = H_CREATED_ARMY_ROBOTIC_OCCUPATION_ORD
+		}
+
+		primitive_army = {
+			sequential_name = H_FORERUNNER_SENTINEL_ARMY_PRIMITIVE_SEQ
+		}
+		industrial_army = {
+			sequential_name = H_FORERUNNER_SENTINEL_ARMY_INDUSTRIAL_SEQ
+		}
+		postatomic_army = {
+			sequential_name = H_FORERUNNER_SENTINEL_ARMY_POSTATOMIC_SEQ
+		}
+		#CUSTOM FORERUNNER ARMIES
+		
+		#SENTINELS
+		
+		forerunner_aggressor_sentinels = {
+			sequential_name = H_FORERUNNER_AGRESSOR_SENTINELS_ORD
+		}
+		forerunner_regulator_sentinels = {
+			sequential_name = H_FORERUNNER_REGULATOR_SENTINELS_ORD
+		}
+		forerunner_onyx_sentinels = {
+			sequential_name = H_FORERUNNER_ONYX_SENTINELS_ORD
+		}
+		forerunner_enforcer_sentinels = {
+			sequential_name = H_FORERUNNER_ENFORCER_SENTINELS_ORD
+		}
+		forerunner_super_sentinels = {
+			sequential_name = H_FORERUNNER_SUPER_SENTINELS_ORD
+		}
+		forerunner_protector_sentinels = {
+			sequential_name = H_FORERUNNER_PROTECTOR_SENTINELS_ORD
+		}
+		forerunner_controller_sentinels = {
+			sequential_name = H_FORERUNNER_CONTROLLER_SENTINELS_ORD
+		}
+		forerunner_eradicator_sentinels = {
+			sequential_name = H_FORERUNNER_ERADICATOR_SENTINELS_ORD
+		}
+		forerunner_strato_sentinel = {
+			random_names = {
+				"Retriever Sentinel" "Steward Sentinel" "Voi Sentinel"
+			}
+		}
+		
+		#ARMIGERS
+		forerunner_armiger_army = {
+			sequential_name = H_FORERUNNER_ARMIGER_ARMY_ORD
+		}
+		
+		#WARRIOR-SERVANT ARMY
+		forerunner_warrior_servant_army = {
+			sequential_name = H_FORERUNNER_WARRIOR_SERVANT_ARMY_ORD
+		}
+		promethean_warrior_servant_defense_army = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_WS_DEFENSE_ARMY_ORD
+		}
+		forerunner_warrior_servant_defense_army = {
+			sequential_name = H_FORERUNNER_WARRIOR_SERVANT_DEFENSE_ARMY_ORD
+		}
+		forerunner_war_sphinx = {
+			sequential_name = H_FORERUNNER_WAR_SPHINX_ORD
+		}
+		
+		#PROMETHEANS (FORERUNNERS)
+		promethean_warrior_servant_army = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_WS_ARMY_ORD
+		}
+		promethean_seekers = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_SEEKERS_ORD
+		}
+		
+		#MECHANICAL PROMETHEANS (CONSTRUCTS)
+		promethean_crawler_army = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_CRAWLERS_ORD
+		}
+		promethean_watchers = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_WATCHERS_ORD
+		}
+		promethean_soldier_army = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_SOLDIERS_ORD
+		}
+		promethean_knight_army = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_KNIGHTS_ORD
+		}
+		promethean_lancer_army = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_LANCERS_ORD
+		}
+		promethean_battlewagon_army = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_BATTLEWAGONS_ORD
+		}
+		promethean_phaetons = {
+			sequential_name = H_FORERUNNER_PROMETHEAN_PHAETON_ORD
+		}
+		
+		#CREATED
+		created_executors = {
+			sequential_name = H_CREATED_EXECUTOR_ARMY_ORD
+		}
+		warden_eternal = {
+			random_names = {
+				"Warden Eternal"
+			}
+		}
+	}
+		
+
+	### PLANETS
+
+	planet_names = {
+
+		generic = {
+			names = { 
+				Nexus Hub Bridge Matrix Network Core Kernel Source Combine Locus Cynosure Omphalos Nucleus Axis Crux Terminus Server Chassis
+				"Aktis IV" Alluvion Arcadia Bastion Bornstellar "Cassidy III" "CE-10-2165-d" Crown "DM-3-1123 b" "Draetheus V" Gao Genesis Ghibalb Hesduros
+				Kamchatka "Keth Sidon" "LP 656-38 e" Maethrillian Meridian Nomdagro Reach Requiem Rhotero Seaward Seclusion Secunda "Shaps III" Taram
+				Triniel "Uthera Midgeerrd" Zhoist Onyx 
+			}
+		}
+		
+		pc_desert = {
+			names = { 
+				"Scorched Nexus" "Scorched Hub" "Scorched Bridge" "Scorched Matrix" "Scorched Network" "Scorched Core" "Scorched Kernel" "Scorched Source" "Scorched Combine" "Scorched Locus" "Scorched Cynosure" "Scorched Omphalos" "Scorched Nucleus" "Scorched Axis" "Scorched Crux" "Scorched Terminus" "Scorched Server" "Scorched Chassis"
+			}
+		}
+		
+		pc_tropical = {
+			names = { 
+				"Verdant Nexus" "Verdant Hub" "Verdant Bridge" "Verdant Matrix" "Verdant Network" "Verdant Core" "Verdant Kernel" "Verdant Source" "Verdant Combine" "Verdant Locus" "Verdant Cynosure" "Verdant Omphalos" "Verdant Nucleus" "Verdant Axis" "Verdant Crux" "Verdant Terminus" "Verdant Server" "Verdant Chassis"
+			}
+		}
+		
+		pc_arid = {
+			names = { 
+				"Desiccant Nexus" "Desiccant Hub" "Desiccant Bridge" "Desiccant Matrix" "Desiccant Network" "Desiccant Core" "Desiccant Kernel" "Desiccant Source" "Desiccant Combine" "Desiccant Locus" "Desiccant Cynosure" "Desiccant Omphalos" "Desiccant Nucleus" "Desiccant Axis" "Desiccant Crux" "Desiccant Terminus" "Desiccant Server" "Desiccant Chassis"
+			}
+		}
+		
+		pc_continental = {
+			names = { 
+				"Terrene Nexus" "Terrene Hub" "Terrene Bridge" "Terrene Matrix" "Terrene Network" "Terrene Core" "Terrene Kernel" "Terrene Source" "Terrene Combine" "Terrene Locus" "Terrene Cynosure" "Terrene Omphalos" "Terrene Nucleus" "Terrene Axis" "Terrene Crux" "Terrene Terminus" "Terrene Server" "Terrene Chassis"
+			}
+		}
+		
+		pc_ocean = {
+			names = { 
+				"Fluid Nexus" "Fluid Hub" "Fluid Bridge" "Fluid Matrix" "Fluid Network" "Fluid Core" "Fluid Kernel" "Fluid Source" "Fluid Combine" "Fluid Locus" "Fluid Cynosure" "Fluid Omphalos" "Liquid Nucleus" "Fluid Axis" "Fluid Crux" "Liquid Terminus" "Fluid Server" "Liquid Chassis"
+			}
+		}
+		
+		pc_tundra = {
+			names = { 
+				"Polar Nexus" "Polar Hub" "Polar Bridge" "Polar Matrix" "Polar Network" "Polar Core" "Polar Kernel" "Polar Source" "Polar Combine" "Polar Locus" "Polar Cynosure" "Polar Omphalos" "Polar Nucleus" "Polar Axis" "Polar Crux" "Polar Terminus" "Polar Server" "Polar Chassis"
+			}
+		}
+		
+		pc_arctic = {
+			names = { 
+				"Cryo Nexus" "Cryo Hub" "Frozen Bridge" "Cryo Matrix" "Frozen Network" "Cryo Core" "Frozen Kernel" "Cryo Source" "Cryo Combine" "Frozen Locus" "Frozen Cynosure" "Frozen Omphalos" "Cryo Nucleus" "Frozen Axis" "Cryo Crux" "Cryo Terminus" "Cryo Server" "Cryo Chassis"
+			}
+		}
+
+		pc_savannah = {
+			names = { 
+				"Veldt Nexus" "Veldt Hub" "Veldt Bridge" "Veldt Matrix" "Veldt Network" "Veldt Core" "Veldt Kernel" "Veldt Source" "Veldt Combine" "Veldt Locus" "Veldt Cynosure" "Veldt Omphalos" "Veldt Nucleus" "Veldt Axis" "Veldt Crux" "Veldt Terminus" "Veldt Server" "Veldt Chassis"
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+				"Tor Nexus" "Tor Hub" "Tor Bridge" "Tor Matrix" "Tor Network" "Tor Core" "Tor Kernel" "Tor Source" "Tor Combine" "Tor Locus" "Tor Cynosure" "Tor Omphalos" "Tor Nucleus" "Tor Axis" "Tor Crux" "Tor Terminus" "Tor Server" "Tor Chassis"
+			}
+		}
+
+		pc_nuked = {
+			names = { 
+				"Grim Nexus" "Grim Hub" "Grim Bridge" "Grim Matrix" "Grim Network" "Grim Core" "Grim Kernel" "Grim Source" "Grim Combine" "Grim Locus" "Grim Cynosure" "Grim Omphalos" "Grim Nucleus" "Grim Axis" "Grim Crux" "Grim Terminus" "Grim Server" "Grim Chassis"
+			}
+		}
+		
+	}
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = { 
+				"Created Unit A1" "Created Unit A2" "Created Unit A3" "Created Unit A4" "Created Unit A5" "Created Unit A6" "Created Unit A7" "Created Unit A8" "Created Unit A9" 
+				"Created Unit B1" "Created Unit B2" "Created Unit B3" "Created Unit B4" "Created Unit B5" "Created Unit B6" "Created Unit B7" "Created Unit B8" "Created Unit B9"
+				"Created Unit C1" "Created Unit C2" "Created Unit C3" "Created Unit C4" "Created Unit C5" "Created Unit C6" "Created Unit C7" "Created Unit C8" "Created Unit C9"
+				"Created Unit D1" "Created Unit D2" "Created Unit D3" "Created Unit D4" "Created Unit D5" "Created Unit D6" "Created Unit D7" "Created Unit D8" "Created Unit D9"
+				"Created Unit E1" "Created Unit E2" "Created Unit E3" "Created Unit E4" "Created Unit E5" "Created Unit E6" "Created Unit E7" "Created Unit E8" "Created Unit E9"
+				"Created Unit F1" "Created Unit F2" "Created Unit F3" "Created Unit F4" "Created Unit F5" "Created Unit F6" "Created Unit F7" "Created Unit F8" "Created Unit F9"
+				"Created Unit G1" "Created Unit G2" "Created Unit G3" "Created Unit G4" "Created Unit G5" "Created Unit G6" "Created Unit G7" "Created Unit G8" "Created Unit G9"
+				"Created Unit H1" "Created Unit H2" "Created Unit H3" "Created Unit H4" "Created Unit H5" "Created Unit H6" "Created Unit H7" "Created Unit H8" "Created Unit H9"
+				"Created Unit I1" "Created Unit I2" "Created Unit I3" "Created Unit I4" "Created Unit I5" "Created Unit I6" "Created Unit I7" "Created Unit I8" "Created Unit I9"
+				"Created Unit J1" "Created Unit J2" "Created Unit J3" "Created Unit J4" "Created Unit J5" "Created Unit J6" "Created Unit J7" "Created Unit J8" "Created Unit J9"
+				"Created Unit K1" "Created Unit K2" "Created Unit K3" "Created Unit K4" "Created Unit K5" "Created Unit K6" "Created Unit K7" "Created Unit K8" "Created Unit K9"
+				"Created Unit L1" "Created Unit L2" "Created Unit L3" "Created Unit L4" "Created Unit L5" "Created Unit L6" "Created Unit L7" "Created Unit L8" "Created Unit L9"
+				"Created Unit M1" "Created Unit M2" "Created Unit M3" "Created Unit M4" "Created Unit M5" "Created Unit M6" "Created Unit M7" "Created Unit M8" "Created Unit M9"
+				"Created Unit N1" "Created Unit N2" "Created Unit N3" "Created Unit N4" "Created Unit N5" "Created Unit N6" "Created Unit N7" "Created Unit N8" "Created Unit N9"
+				"Created Unit O1" "Created Unit O2" "Created Unit O3" "Created Unit O4" "Created Unit O5" "Created Unit O6" "Created Unit O7" "Created Unit O8" "Created Unit O9"
+				"Created Unit P1" "Created Unit P2" "Created Unit P3" "Created Unit P4" "Created Unit P5" "Created Unit P6" "Created Unit P7" "Created Unit P8" "Created Unit P9"
+				"Created Unit Q1" "Created Unit Q2" "Created Unit Q3" "Created Unit Q4" "Created Unit Q5" "Created Unit Q6" "Created Unit Q7" "Created Unit Q8" "Created Unit Q9"
+				"Created Unit R1" "Created Unit R2" "Created Unit R3" "Created Unit R4" "Created Unit R5" "Created Unit R6" "Created Unit R7" "Created Unit R8" "Created Unit R9"
+				"Created Unit S1" "Created Unit S2" "Created Unit S3" "Created Unit S4" "Created Unit S5" "Created Unit S6" "Created Unit S7" "Created Unit S8" "Created Unit S9"
+				"Created Unit T1" "Created Unit T2" "Created Unit T3" "Created Unit T4" "Created Unit T5" "Created Unit T6" "Created Unit T7" "Created Unit T8" "Created Unit T9"
+				"Created Unit U1" "Created Unit U2" "Created Unit U3" "Created Unit U4" "Created Unit U5" "Created Unit U6" "Created Unit U7" "Created Unit U8" "Created Unit U9"
+				"Created Unit V1" "Created Unit V2" "Created Unit V3" "Created Unit V4" "Created Unit V5" "Created Unit V6" "Created Unit V7" "Created Unit V8" "Created Unit V9"
+				"Created Unit W1" "Created Unit W2" "Created Unit W3" "Created Unit W4" "Created Unit W5" "Created Unit W6" "Created Unit W7" "Created Unit W8" "Created Unit W9"
+				"Created Unit X1" "Created Unit X2" "Created Unit X3" "Created Unit X4" "Created Unit X5" "Created Unit X6" "Created Unit X7" "Created Unit X8" "Created Unit X9"
+				"Created Unit Y1" "Created Unit Y2" "Created Unit Y3" "Created Unit Y4" "Created Unit Y5" "Created Unit Y6" "Created Unit Y7" "Created Unit Y8" "Created Unit Y9"
+				"Created Unit Z1" "Created Unit Z2" "Created Unit Z3" "Created Unit Z4" "Created Unit Z5" "Created Unit Z6" "Created Unit Z7" "Created Unit Z8" "Created Unit Z9"
+				"Warden-Eternal" "Cortana CTN 0452-9" Sloan Cromwell "Amitābha" Jiang Cleo "Erin Lynn" Nero Louise Sonduk "Kue Ching" Lychus Epona Archie Guinevere Andarta Vesta Dillan Minerva Kezbacker Leonidas
+			}
+			
+			# Always combined with a second name
+			first_names = {
+			}
+			
+			# Always combined with a first name
+			second_names = {
+			}
+			
+			regnal_first_names = {
+			}
+			
+			regnal_second_names = {
+			}
+		}
+	}
+
+}
