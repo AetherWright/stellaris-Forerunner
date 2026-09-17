@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_auth_forerunner_ecumene"
+		texturefile = "gfx/interface/icons/governments/civics/civic_the_mantle_of_responsibility.dds"
+	}
+}
