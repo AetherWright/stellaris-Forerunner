@@ -1,0 +1,33 @@
+# Leader-scoped. A Rate is assigned once; mutually exclusive Rate traits enforce one permanent identity.
+forerunner_assign_rate = {
+	if = {
+		limit = { is_organic_forerunner_leader = yes NOT = { has_forerunner_rate = yes } }
+		if = {
+			limit = { leader_class = commander }
+			random_list = {
+				55 = { add_trait = { trait = leader_trait_forerunner_rate_warrior_servant show_message = no } }
+				30 = { add_trait = { trait = leader_trait_forerunner_rate_builder_security show_message = no } }
+				15 = { add_trait = { trait = leader_trait_forerunner_rate_promethean show_message = no } }
+			}
+		}
+		else_if = {
+			limit = { leader_class = scientist }
+			random_list = {
+				35 = { add_trait = { trait = leader_trait_forerunner_rate_lifeworker show_message = no } }
+				30 = { add_trait = { trait = leader_trait_forerunner_rate_miner show_message = no } }
+				20 = { add_trait = { trait = leader_trait_forerunner_rate_builder show_message = no } }
+				15 = { add_trait = { trait = leader_trait_forerunner_rate_engineer show_message = no } }
+			}
+		}
+		else_if = {
+			limit = { leader_class = official }
+			random_list = {
+				35 = { add_trait = { trait = leader_trait_forerunner_rate_builder show_message = no } }
+				25 = { add_trait = { trait = leader_trait_forerunner_rate_juridical show_message = no } }
+				15 = { add_trait = { trait = leader_trait_forerunner_rate_miner show_message = no } }
+				15 = { add_trait = { trait = leader_trait_forerunner_rate_lifeworker show_message = no } }
+				10 = { add_trait = { trait = leader_trait_forerunner_rate_engineer show_message = no } }
+			}
+		}
+	}
+}

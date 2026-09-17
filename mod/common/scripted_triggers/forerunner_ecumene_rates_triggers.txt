@@ -1,0 +1,24 @@
+# Stable compatibility hooks for optional submods. Leader-scoped triggers begin with is_/has_.
+is_forerunner_ecumene = { has_civic = civic_forerunner_ecumene }
+is_organic_forerunner_leader = {
+	species = { has_trait = trait_forerunner_species }
+}
+has_forerunner_rate = {
+	OR = {
+		has_trait = leader_trait_forerunner_rate_builder
+		has_trait = leader_trait_forerunner_rate_builder_security
+		has_trait = leader_trait_forerunner_rate_miner
+		has_trait = leader_trait_forerunner_rate_lifeworker
+		has_trait = leader_trait_forerunner_rate_juridical
+		has_trait = leader_trait_forerunner_rate_engineer
+		has_trait = leader_trait_forerunner_rate_warrior_servant
+		has_trait = leader_trait_forerunner_rate_promethean
+	}
+}
+is_forerunner_builder = { OR = { has_trait = leader_trait_forerunner_rate_builder has_trait = leader_trait_forerunner_rate_builder_security } }
+is_forerunner_miner = { has_trait = leader_trait_forerunner_rate_miner }
+is_forerunner_lifeworker = { has_trait = leader_trait_forerunner_rate_lifeworker }
+is_forerunner_juridical = { has_trait = leader_trait_forerunner_rate_juridical }
+is_forerunner_engineer = { has_trait = leader_trait_forerunner_rate_engineer }
+is_forerunner_warrior_servant = { OR = { has_trait = leader_trait_forerunner_rate_warrior_servant has_trait = leader_trait_forerunner_rate_promethean } }
+is_forerunner_promethean = { has_trait = leader_trait_forerunner_rate_promethean }

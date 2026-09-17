@@ -1,0 +1,49 @@
+# Existing positions retain their IDs; Rate traits are credentials, not decorations.
+forerunner_master_builder_councilor = {
+	leader_class = { official }
+	possible = { is_gestalt = no has_civic = civic_forerunner_ecumene }
+	is_leader_possible = { leader_class = official is_forerunner_builder = yes }
+	civic = civic_forerunner_ecumene
+	modifier = { planet_building_build_cost_mult = -0.05 planet_building_build_speed_mult = 0.05 country_engineering_research_produces_mult = 0.05 }
+	ai_hiring_weight = { inline_script = councilor_leader_weights }
+}
+forerunner_master_miner_councilor = {
+	leader_class = { scientist }
+	possible = { is_gestalt = no has_civic = civic_forerunner_ecumene }
+	is_leader_possible = { leader_class = scientist is_forerunner_miner = yes }
+	civic = civic_forerunner_ecumene
+	modifier = { terraforming_cost_mult = -0.10 terraforming_speed_mult = 0.10 country_minerals_produces_mult = 0.05 }
+	ai_hiring_weight = { inline_script = councilor_leader_weights }
+}
+forerunner_master_juridical_councilor = {
+	leader_class = { official }
+	possible = { is_gestalt = no has_civic = civic_forerunner_ecumene }
+	is_leader_possible = { leader_class = official is_forerunner_juridical = yes }
+	civic = civic_forerunner_ecumene
+	modifier = { planet_crime_add = -10 planet_stability_add = 2 }
+	ai_hiring_weight = { inline_script = councilor_leader_weights }
+}
+forerunner_lifeworker_councilor = {
+	leader_class = { scientist }
+	possible = { is_gestalt = no has_civic = civic_forerunner_ecumene }
+	is_leader_possible = { leader_class = scientist is_forerunner_lifeworker = yes }
+	civic = civic_forerunner_ecumene
+	modifier = { category_biology_research_speed_mult = 0.10 pop_growth_speed = 0.05 }
+	ai_hiring_weight = { inline_script = councilor_leader_weights }
+}
+forerunner_master_engineer_councilor = {
+	leader_class = { official scientist }
+	possible = { is_gestalt = no has_civic = civic_forerunner_ecumene }
+	is_leader_possible = { OR = { leader_class = official leader_class = scientist } is_forerunner_engineer = yes }
+	civic = civic_forerunner_ecumene
+	modifier = { planet_structures_cost_mult = -0.05 ships_upkeep_mult = -0.05 }
+	ai_hiring_weight = { inline_script = councilor_leader_weights }
+}
+forerunner_warrior_servant_councilor = {
+	leader_class = { commander }
+	possible = { is_gestalt = no has_civic = civic_forerunner_ecumene }
+	is_leader_possible = { leader_class = commander is_forerunner_warrior_servant = yes }
+	civic = civic_forerunner_ecumene
+	modifier = { ship_weapon_damage = 0.05 army_damage_mult = 0.10 country_war_exhaustion_mult = -0.05 }
+	ai_hiring_weight = { inline_script = councilor_leader_weights }
+}

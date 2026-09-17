@@ -1,0 +1,10 @@
+# Custom authority retains the oligarchic election machinery without pretending to be vanilla oligarchy.
+auth_forerunner_ecumene = {
+	icon = "GFX_auth_oligarchic"
+	election_type = oligarchic_election
+	election_term_years = 1100
+	election_term_variance = 100
+	can_reform = yes
+	possible = { is_gestalt = no }
+	playable = { is_gestalt = no }
+}
