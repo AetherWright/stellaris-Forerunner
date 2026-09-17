@@ -1,0 +1,128 @@
+# Stellaris 4.4 compatibility replacement for the dependency's legacy trait file.
+# The dependency still declares removed trait keys and references species classes from
+# other, optional Halo mods.  Keeping the trait IDs and effects intact lets its
+# prescripted empires and this submod load without those parse failures.
+
+trait_forerunner_species = {
+	cost = 4
+	opposites = {
+		trait_intelligent
+		trait_enduring
+		trait_venerable
+		trait_conservational
+	}
+	initial = yes
+	randomized = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+	immortal_leaders = yes
+	hide_age = no
+	leader_age_min = 1000
+	allowed_archetypes = { BIOLOGICAL }
+	ai_weight = { weight = 0 }
+	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
+	modifier = {
+		pop_environment_tolerance = 0.30
+		modify_species_cost_mult = -0.75
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_specialist_produces_mult = 0.20
+		planet_pops_consumer_goods_upkeep_mult = -0.25
+		leaders_cost_mult = 1.50
+		pop_happiness = -0.05
+	}
+	slave_cost = { energy = 5000 }
+}
+
+trait_robot_promethean_ai = {
+	cost = 2
+	opposites = { trait_robot_sentinel_ai trait_robot_created_ai }
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		army_starting_experience_add = 100
+		army_morale_damage_mult = 0.30
+		army_damage_mult = 0.15
+		army_health = 0.15
+		armies_upkeep_mult = -0.15
+	}
+	icon = "gfx/interface/icons/traits/trait_robot_promethean_ai.dds"
+	randomized = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+	improves_leaders = yes
+	forced_happiness = yes
+	ai_weight = { weight = 0 }
+}
+
+trait_robot_sentinel_ai = {
+	cost = 2
+	opposites = { trait_robot_promethean_ai trait_robot_created_ai }
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		planet_pop_assemblers_upkeep_mult = -0.10
+		planet_structures_cost_mult = -0.10
+		planet_structures_upkeep_mult = -0.10
+		planet_pop_assembly_mult = 0.10
+		planet_jobs_produces_mult = 0.05
+	}
+	icon = "gfx/interface/icons/traits/trait_robot_sentinel_ai.dds"
+	randomized = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+	improves_leaders = yes
+	forced_happiness = yes
+	ai_weight = { weight = 0 }
+}
+
+trait_robot_created_ai = {
+	cost = 2
+	opposites = { trait_robot_sentinel_ai trait_robot_promethean_ai }
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		species_leader_exp_gain = 0.25
+		army_starting_experience_add = 100
+		planet_jobs_produces_mult = 0.10
+		planet_jobs_upkeep_mult = -0.10
+	}
+	icon = "gfx/interface/icons/traits/trait_robot_created_ai.dds"
+	initial = yes
+	randomized = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+	improves_leaders = yes
+	ai_weight = { weight = 0 }
+}
+
+trait_huragok_species = {
+	cost = 3
+	opposites = { trait_intelligent trait_enduring trait_venerable }
+	initial = no
+	randomized = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+	immortal_leaders = yes
+	forced_happiness = yes
+	leader_age_min = 100
+	leader_age_max = 1000
+	allowed_archetypes = { BIOLOGICAL }
+	ai_weight = { weight = 0 }
+	icon = "gfx/interface/icons/traits/trait_huragok_species.dds"
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
+		planet_jobs_physics_research_produces_mult = 0.10
+		planet_jobs_upkeep_mult = -0.30
+		planet_jobs_unity_produces_mult = 0.20
+		leaders_cost_mult = 1.00
+		logistic_growth_mult = -0.75
+		army_damage_mult = -1.0
+		army_health = -1.0
+	}
+	slave_cost = { energy = 3000 }
+}
