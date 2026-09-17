@@ -2,11 +2,21 @@
 auth_forerunner_ecumene = {
 	# The sprite is declared here but deliberately reuses the dependency's Mantle civic texture.
 	icon = "GFX_auth_forerunner_ecumene"
-	country_type = { default = yes }
-	election_type = oligarchic_election
+	# Match the native oligarchic authority's election schema; `oligarchic_election`
+	# is not an authority election type and therefore supplied no valid ruler flow.
+	election_type = oligarchic
 	election_term_years = 1100
 	election_term_variance = 100
+	can_have_emergency_elections = yes
+	emergency_election_cost = 250
+	max_election_candidates = 4
+	has_agendas = yes
 	can_reform = yes
-	possible = { is_gestalt = no }
-	playable = { is_gestalt = no }
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	tags = { AUTHORITY_ELECTION_OLIGARCHIC }
 }
