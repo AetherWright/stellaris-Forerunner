@@ -3,7 +3,11 @@ gov_ecumene_council = {
 	ruler_title = RT_FIRST_COUNCILOR
 	ruler_title_female = RT_FIRST_COUNCILOR
 	possible = {
-		has_authority = auth_forerunner_ecumene
+		# Keep the dependency's pre-scripted country valid while making the custom authority selectable.
+		OR = {
+			has_authority = auth_forerunner_ecumene
+			has_authority = auth_oligarchic
+		}
 		has_civic = civic_forerunner_ecumene
 	}
 	weight = { base = 5000 }

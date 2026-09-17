@@ -8,7 +8,7 @@ leader_trait_forerunner_rate_builder = {
 	triggered_planet_modifier = { potential = { is_ruler = no leader_class = official } planet_building_build_speed_mult = 0.15 planet_buildings_cost_mult = -0.10 }
 	triggered_sector_modifier = { potential = { is_ruler = no leader_class = official } planet_building_build_speed_mult = 0.08 planet_buildings_cost_mult = -0.05 }
 	triggered_self_modifier = { potential = { is_ruler = no leader_class = scientist } science_ship_survey_speed = 0.10 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_builder_security = {
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
@@ -18,7 +18,7 @@ leader_trait_forerunner_rate_builder_security = {
 	fleet_modifier = { ship_hull_mult = 0.10 ship_armor_mult = 0.10 starbase_damage_mult = 0.15 }
 	army_modifier = { army_defense_damage_mult = 0.15 army_defense_health_mult = 0.15 }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } starbase_damage_mult = 0.20 starbase_buildings_cost_mult = -0.15 defense_armies_health = 0.20 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_miner = {
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
@@ -28,7 +28,7 @@ leader_trait_forerunner_rate_miner = {
 	triggered_councilor_modifier = { potential = { is_ruler = yes } terraforming_cost_mult = -0.20 megastructure_build_speed_mult = 0.10 country_minerals_produces_mult = 0.10 }
 	triggered_planet_modifier = { potential = { is_ruler = no } planet_jobs_minerals_produces_mult = 0.15 planet_building_build_speed_mult = 0.10 }
 	triggered_self_modifier = { potential = { is_ruler = no leader_class = scientist } science_ship_survey_speed = 0.15 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_lifeworker = {
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
@@ -38,7 +38,7 @@ leader_trait_forerunner_rate_lifeworker = {
 	triggered_councilor_modifier = { potential = { is_ruler = yes } category_biology_research_speed_mult = 0.15 pop_growth_speed = 0.10 biological_pop_happiness = 0.05 }
 	triggered_planet_modifier = { potential = { is_ruler = no } planet_jobs_society_research_produces_mult = 0.15 planet_amenities_add = 5 }
 	triggered_self_modifier = { potential = { is_ruler = no leader_class = scientist } science_ship_survey_speed = 0.10 ship_anomaly_generation_chance_mult = 0.10 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_juridical = {
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
@@ -48,7 +48,7 @@ leader_trait_forerunner_rate_juridical = {
 	triggered_councilor_modifier = { potential = { is_ruler = yes } planet_stability_add = 8 planet_crime_add = -20 pop_government_ethic_attraction = 0.10 }
 	planet_modifier = { planet_stability_add = 5 planet_crime_add = -10 }
 	sector_modifier = { planet_stability_add = 2 planet_crime_add = -5 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_engineer = {
 	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
@@ -58,7 +58,7 @@ leader_trait_forerunner_rate_engineer = {
 	triggered_councilor_modifier = { potential = { is_ruler = yes } planet_structures_cost_mult = -0.15 ships_upkeep_mult = -0.10 planet_pops_robotics_upkeep_mult = -0.10 }
 	triggered_planet_modifier = { potential = { is_ruler = no } planet_buildings_cost_mult = -0.10 planet_districts_cost_mult = -0.10 }
 	triggered_self_modifier = { potential = { is_ruler = no leader_class = scientist } ship_anomaly_research_speed_mult = 0.10 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_warrior_servant = {
 	icon = "gfx/interface/icons/traits/leader_trait_ruler_forerunner_didact.dds"
@@ -68,7 +68,7 @@ leader_trait_forerunner_rate_warrior_servant = {
 	fleet_modifier = { ship_weapon_damage = 0.10 ship_weapon_range_mult = 0.10 command_limit_add = 10 }
 	army_modifier = { army_damage_mult = 0.20 army_health = 0.15 }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } ship_fire_rate_mult = 0.10 country_war_exhaustion_mult = -0.15 army_damage_mult = 0.15 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }
 leader_trait_forerunner_rate_promethean = {
 	icon = "gfx/interface/icons/traits/leader_trait_ruler_forerunner_didact.dds"
@@ -78,5 +78,5 @@ leader_trait_forerunner_rate_promethean = {
 	fleet_modifier = { ship_weapon_damage = 0.15 ship_fire_rate_mult = 0.10 ship_weapon_range_mult = 0.10 command_limit_add = 20 }
 	army_modifier = { army_damage_mult = 0.30 army_health = 0.30 army_experience_gain_mult = 0.20 }
 	triggered_councilor_modifier = { potential = { is_ruler = yes } ship_weapon_damage = 0.15 command_limit_mult = 0.25 army_damage_mult = 0.25 armies_upkeep_mult = -0.10 }
-	initial = no randomized = no notify_on_gained = no
+	initial = yes randomized = yes notify_on_gained = no
 }

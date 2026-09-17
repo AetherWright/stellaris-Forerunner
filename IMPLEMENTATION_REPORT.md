@@ -2,7 +2,7 @@
 
 ## Files created
 
-The installable content is under `mod/`: descriptor, custom authority, Ecumene government and Rate Primacy policy override, Rate leader traits, scripted triggers/effects, lifecycle events/on-actions, council positions, and English localization. The root descriptor and README support manual installation.
+The installable content is under `mod/`: descriptor, custom authority, Ecumene government and Rate Primacy policy override, Rate leader traits, scripted triggers, council positions, authority icon sprite, and English localization. The root descriptor and README support manual installation.
 
 ## Intentional overrides
 
@@ -25,11 +25,11 @@ Every Rate trait is mutually exclusive with the rest. Builder Security is delibe
 
 ## Assignment
 
-`on_game_start_country` assigns Rates to existing owned and pool leaders. `on_leader_spawned` assigns a Rate to each newly spawned organic Forerunner that does not already have one. The scripted effect excludes non-Forerunners and will not replace an existing Rate.
+Rates are normal initial leader traits: they are selectable for an eligible starting ruler and randomized for eligible organic Forerunner leaders. Mutual opposition enforces one Rate without an event-based assignment system.
 
 ## Authority and council
 
-`auth_forerunner_ecumene` uses `oligarchic_election`, an 1100-year term, and 100-year variance. The existing preset is converted from vanilla oligarchy during country initialization. Rate-specific offices require their Rate trait, while the visible council remains a small cabinet rather than a claim to represent the entire Ecumene Council.
+`auth_forerunner_ecumene` is declared in Stellaris's required `common/governments/authorities` folder and uses `oligarchic_election`, an 1100-year term, and 100-year variance. The existing preset remains valid under vanilla oligarchy; the custom authority is available in empire creation. Rate-specific offices require their Rate trait, while the visible council remains a small cabinet rather than a claim to represent the entire Ecumene Council.
 
 ## Validation performed
 

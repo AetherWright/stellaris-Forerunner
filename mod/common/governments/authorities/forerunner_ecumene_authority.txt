@@ -1,6 +1,6 @@
-# Custom authority retains the oligarchic election machinery without pretending to be vanilla oligarchy.
+# Authorities are parsed only from common/governments/authorities.
 auth_forerunner_ecumene = {
-	# The sprite is declared in this mod but deliberately reuses the dependency's Mantle civic texture.
+	# The sprite is declared here but deliberately reuses the dependency's Mantle civic texture.
 	icon = "GFX_auth_forerunner_ecumene"
 	country_type = { default = yes }
 	election_type = oligarchic_election
