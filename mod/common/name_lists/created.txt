@@ -1,4 +1,4 @@
-### Halo Created
+﻿### Halo Created
 
 created = {
 	category = "Machine"
@@ -107,7 +107,7 @@ created = {
 		}
 			
 		assault_army = {
-			sequential_name = H_CREATED_ARMY_GENEWARRIOR_ORD
+			sequential_name = H_CREATED_ARMIGER_ARMY_ORD
 		}
 		
 		clone_army = {

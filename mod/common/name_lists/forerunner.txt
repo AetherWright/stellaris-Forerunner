@@ -1,4 +1,4 @@
-### Halo Forerunners
+﻿### Halo Forerunners
 
 forerunner = {
 	should_name_home_system_planets = no
