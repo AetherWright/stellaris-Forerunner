@@ -1,12 +1,73 @@
-# Intentional dependency override: same policy ID, reinterpreted as institutional Rate Primacy.
+# Intentional dependency override: Rate Primacy means institutional emphasis, never exclusion.
 forerunner_rates = {
-	# has_civic is evaluated against the active country; it is more reliable here than civic-validation scope.
 	potential = { is_country_type = default is_ai = no has_civic = civic_forerunner_ecumene }
+
 	option = { name = no_action policy_flags = { no_action } modifier = { } }
-	option = { name = builder_rate policy_flags = { builder_rate } modifier = { country_influence_produces_mult = 0.10 megastructure_build_speed_mult = 0.10 planet_building_build_speed_mult = 0.10 } AI_weight = { factor = 2 } }
-	option = { name = miner_rate policy_flags = { miner_rate } modifier = { terraforming_cost_mult = -0.15 country_minerals_produces_mult = 0.10 country_energy_produces_mult = 0.05 deposit_blockers_cost_mult = -0.10 } AI_weight = { factor = 1 } }
-	option = { name = lifeworker_rate policy_flags = { lifeworker_rate } modifier = { category_biology_research_speed_mult = 0.15 pop_growth_speed = 0.10 biological_pop_happiness = 0.05 } AI_weight = { factor = 1 } }
-	option = { name = juridical_rate policy_flags = { juridical_rate } modifier = { planet_crime_add = -20 planet_stability_add = 5 pop_government_ethic_attraction = 0.05 } AI_weight = { factor = 1 } }
-	option = { name = warrior_servant_rate policy_flags = { warrior_servant_rate } modifier = { country_war_exhaustion_mult = -0.10 ship_weapon_damage = 0.08 army_damage_mult = 0.10 } AI_weight = { factor = 1 } }
-	option = { name = engineer_rate policy_flags = { engineer_rate } modifier = { planet_structures_cost_mult = -0.10 planet_structures_upkeep_mult = -0.10 ships_upkeep_mult = -0.05 } AI_weight = { factor = 1 } }
+
+	option = {
+		name = builder_rate
+		policy_flags = { builder_rate }
+		modifier = { country_influence_produces_mult = 0.05 megastructure_build_speed_mult = 0.10 planet_building_build_speed_mult = 0.10 planet_district_build_speed_mult = 0.10 }
+		AI_weight = { factor = 2 }
+	}
+	option = {
+		name = miner_rate
+		policy_flags = { miner_rate }
+		modifier = { terraforming_cost_mult = -0.10 country_minerals_produces_mult = 0.10 station_gatherers_produces_mult = 0.10 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = lifeworker_rate
+		policy_flags = { lifeworker_rate }
+		modifier = { category_biology_research_speed_mult = 0.10 pop_growth_speed = 0.08 biological_pop_happiness = 0.05 terraforming_speed_mult = 0.10 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = juridical_rate
+		policy_flags = { juridical_rate }
+		modifier = { planet_crime_add = -15 planet_stability_add = 3 country_edict_fund_add = 25 council_agenda_progress_speed = 0.05 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = warrior_servant_rate
+		policy_flags = { warrior_servant_rate }
+		modifier = { country_war_exhaustion_mult = -0.08 country_naval_cap_mult = 0.08 ship_weapon_damage = 0.05 army_damage_mult = 0.10 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = engineer_rate
+		policy_flags = { engineer_rate }
+		modifier = { planet_structures_upkeep_mult = -0.08 ships_upkeep_mult = -0.05 ships_alloys_cost_mult = -0.05 category_engineering_research_speed_mult = 0.10 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = theoretical_rate
+		policy_flags = { theoretical_rate }
+		modifier = { rare_tech_draw_chance_mult = 0.50 dangerous_tech_draw_chance_mult = 0.75 num_tech_alternatives_add = 1 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = historian_rate
+		policy_flags = { historian_rate }
+		modifier = { country_unity_produces_mult = 0.10 species_leader_exp_gain = 0.10 ship_archaeological_site_excavation_speed_mult = 0.15 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = weaver_rate
+		policy_flags = { weaver_rate }
+		modifier = { country_unity_produces_mult = 0.10 planet_amenities_mult = 0.05 pop_happiness = 0.03 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = speaker_rate
+		policy_flags = { speaker_rate }
+		modifier = { diplo_weight_mult = 0.10 envoy_improve_relations_mult = 0.15 country_influence_produces_mult = 0.05 }
+		AI_weight = { factor = 1 }
+	}
+	option = {
+		name = interpreter_rate
+		policy_flags = { interpreter_rate }
+		modifier = { country_unity_produces_mult = 0.08 pop_government_ethic_attraction = 0.10 country_trust_growth = 0.10 diplo_weight_mult = 0.05 }
+		AI_weight = { factor = 1 }
+	}
 }

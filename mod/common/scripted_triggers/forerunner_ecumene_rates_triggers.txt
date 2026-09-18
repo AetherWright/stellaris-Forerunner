@@ -1,5 +1,12 @@
 # Stable compatibility hooks for optional submods. Leader-scoped triggers begin with is_/has_.
 is_forerunner_ecumene = { has_civic = civic_forerunner_ecumene }
+is_forerunner_oligarchic_government = {
+	OR = {
+		has_authority = auth_forerunner_ecumene
+		has_authority = auth_oligarchic
+	}
+	has_civic = civic_forerunner_ecumene
+}
 is_organic_forerunner_leader = {
 	species = { has_trait = trait_forerunner_species }
 }
@@ -12,6 +19,11 @@ has_forerunner_rate = {
 		has_trait = leader_trait_forerunner_rate_juridical
 		has_trait = leader_trait_forerunner_rate_engineer
 		has_trait = leader_trait_forerunner_rate_warrior_servant
+		has_trait = leader_trait_forerunner_rate_theoretical
+		has_trait = leader_trait_forerunner_rate_historian
+		has_trait = leader_trait_forerunner_rate_weaver
+		has_trait = leader_trait_forerunner_rate_speaker
+		has_trait = leader_trait_forerunner_rate_interpreter
 		has_trait = leader_trait_forerunner_rate_promethean
 	}
 }
@@ -21,4 +33,9 @@ is_forerunner_lifeworker = { has_trait = leader_trait_forerunner_rate_lifeworker
 is_forerunner_juridical = { has_trait = leader_trait_forerunner_rate_juridical }
 is_forerunner_engineer = { has_trait = leader_trait_forerunner_rate_engineer }
 is_forerunner_warrior_servant = { OR = { has_trait = leader_trait_forerunner_rate_warrior_servant has_trait = leader_trait_forerunner_rate_promethean } }
+is_forerunner_theoretical = { has_trait = leader_trait_forerunner_rate_theoretical }
+is_forerunner_historian = { has_trait = leader_trait_forerunner_rate_historian }
+is_forerunner_weaver = { has_trait = leader_trait_forerunner_rate_weaver }
+is_forerunner_speaker = { has_trait = leader_trait_forerunner_rate_speaker }
+is_forerunner_interpreter = { has_trait = leader_trait_forerunner_rate_interpreter }
 is_forerunner_promethean = { has_trait = leader_trait_forerunner_rate_promethean }

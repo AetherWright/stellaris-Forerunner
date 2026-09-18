@@ -1,0 +1,112 @@
+# Additive Ecumene agendas. All Rates remain present; current primacy and ruler Rate
+# only influence AI preference, not player access.
+
+agenda_forerunner_great_works = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { planet_building_build_speed_mult = 0.10 planet_district_build_speed_mult = 0.10 megastructure_build_speed_mult = 0.05 }
+	finish_modifier = forerunner_agenda_great_works_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = builder_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_builder } } }
+}
+
+agenda_forerunner_review_of_the_council = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { planet_stability_add = 2 planet_crime_add = -5 council_agenda_progress_speed = 0.05 }
+	finish_modifier = forerunner_agenda_review_of_the_council_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = juridical_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_juridical } } }
+}
+
+agenda_forerunner_unbounded_inquiry = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { rare_tech_draw_chance_mult = 0.25 dangerous_tech_draw_chance_mult = 0.40 }
+	finish_modifier = forerunner_agenda_unbounded_inquiry_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = theoretical_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_theoretical } } }
+}
+
+agenda_forerunner_harmonized_systems = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { planet_structures_upkeep_mult = -0.05 ships_upkeep_mult = -0.03 category_engineering_research_speed_mult = 0.05 }
+	finish_modifier = forerunner_agenda_harmonized_systems_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = engineer_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_engineer } } }
+}
+
+agenda_forerunner_ecumene_readiness = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { country_naval_cap_mult = 0.05 country_war_exhaustion_mult = -0.05 }
+	finish_modifier = forerunner_agenda_ecumene_readiness_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = warrior_servant_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_warrior_servant } } }
+}
+
+agenda_forerunner_stellar_development = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { country_minerals_produces_mult = 0.05 station_gatherers_produces_mult = 0.05 }
+	finish_modifier = forerunner_agenda_stellar_development_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = miner_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_miner } } }
+}
+
+agenda_forerunner_living_stewardship = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { category_biology_research_speed_mult = 0.05 terraforming_speed_mult = 0.05 }
+	finish_modifier = forerunner_agenda_living_stewardship_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = lifeworker_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_lifeworker } } }
+}
+
+agenda_forerunner_archive_continuity = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { country_unity_produces_mult = 0.05 species_leader_exp_gain = 0.05 }
+	finish_modifier = forerunner_agenda_archive_continuity_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = historian_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_historian } } }
+}
+
+agenda_forerunner_shared_narrative = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { country_unity_produces_mult = 0.05 planet_amenities_mult = 0.03 }
+	finish_modifier = forerunner_agenda_shared_narrative_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = weaver_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_weaver } } }
+}
+
+agenda_forerunner_voice_of_the_ecumene = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { diplo_weight_mult = 0.05 envoy_improve_relations_mult = 0.10 }
+	finish_modifier = forerunner_agenda_voice_of_the_ecumene_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = speaker_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_speaker } } }
+}
+
+agenda_forerunner_mantle_deliberation = {
+	agenda_cost = 7000
+	potential = { has_civic = civic_forerunner_ecumene }
+	allow = { always = yes }
+	modifier = { country_unity_produces_mult = 0.05 pop_government_ethic_attraction = 0.05 country_trust_growth = 0.05 }
+	finish_modifier = forerunner_agenda_mantle_deliberation_finish
+	agenda_finish_modifier_duration = 3600
+	ai_weight = { weight = 10 modifier = { factor = 5 has_policy_flag = interpreter_rate } modifier = { factor = 3 ruler = { has_trait = leader_trait_forerunner_rate_interpreter } } }
+}

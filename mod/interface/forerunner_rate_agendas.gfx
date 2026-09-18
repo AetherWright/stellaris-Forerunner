@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_great_works" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_review_of_the_council" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_unbounded_inquiry" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_harmonized_systems" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_ecumene_readiness" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_didact.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_stellar_development" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_living_stewardship" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_archive_continuity" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_shared_narrative" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_voice_of_the_ecumene" texturefile = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds" }
+	spriteType = { name = "GFX_council_agenda_icon_agenda_forerunner_mantle_deliberation" texturefile = "gfx/interface/icons/governments/civics/civic_the_mantle_of_responsibility.dds" }
+}

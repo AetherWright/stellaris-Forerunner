@@ -1,42 +1,67 @@
 # Implementation report
 
-## Files created
+## Compatibility approach
 
-The installable content is under `mod/`: descriptor, custom authority, Ecumene government and Rate Primacy policy override, Rate leader traits, scripted triggers, council positions, authority icon sprite, and English localization. The root descriptor and README support manual installation.
+The pass remains additive wherever Stellaris permits it. The custom authority stays in `common/governments/authorities`, Council agendas and their finish modifiers live in new files, and new Rate identities extend the working trait file. The dependency's public government and policy IDs remain intact for presets and saves.
 
-## Intentional overrides
+The only narrow dependency overrides are:
 
-`gov_ecumene_council` is redefined only to require the new Ecumene authority while retaining its First Councilor title and established ID. `forerunner_rates` retains its ID but becomes Rate Primacy. Existing councilor IDs are redefined only to require their appropriate Rate trait. The dependency's specialist leader traits are left intact rather than removed: the new assignment system never grants them, avoiding save-breaking deletion.
+- `gov_ecumene_council`, to accept both the custom Ecumene authority and vanilla oligarchy.
+- `forerunner_rates`, to preserve its policy ID while expanding Rate Primacy.
+- `00_species_traits_forerunner.txt`, retained from the boot-fix pass to replace obsolete dependency syntax.
+
+No vanilla technology list, automated-research file, authority collection, or dependency leader-trait collection is broadly replaced.
+
+## Authority classification
+
+`auth_forerunner_ecumene` retains its 1,100-year term, 100-year variance, four candidates, emergency elections, agendas, and oligarchic ruler council position. It uses the native `oligarchic` election type and `AUTHORITY_ELECTION_OLIGARCHIC` tag, and now explicitly enables factions and disallows reelection.
+
+This is the clean engine-supported oligarchic classification. Some vanilla scripts check the literal `auth_oligarchic` ID rather than an election tag. Making all of those recognize a custom authority would require broad vanilla overrides. `is_forerunner_oligarchic_government` is provided as an additive public hook for compatible submods.
 
 ## Rate/class mapping
 
-| Rate | Leader classes |
-| --- | --- |
-| Builder | Scientist, Official |
-| Builder Security | Commander |
-| Miner | Scientist, Official |
-| Lifeworker | Scientist, Official |
-| Juridical | Official |
-| Engineer | Scientist, Official |
-| Warrior-Servant | Commander |
-| Promethean | Commander (15% of newly generated organic Forerunner commanders) |
+| Rate | Eligible leader classes | Allowed exceptional pairing |
+| --- | --- | --- |
+| Builder | Scientist, Official | Lifeworker or Engineer |
+| Miner | Scientist, Official | Lifeworker |
+| Lifeworker | Scientist, Official | Builder or Miner |
+| Juridical | Official | Warrior-Servant |
+| Warrior-Servant | Commander | Juridical |
+| Engineer | Scientist, Official | Builder |
+| Theoretical | Scientist | Historian |
+| Historian | Scientist, Official | Theoretical |
+| Weaver | Official | Speaker |
+| Speaker | Official | Weaver or Interpreter |
+| Interpreter | Scientist, Official | Speaker |
 
-Every Rate trait is mutually exclusive with the rest. Builder Security is deliberately a Commander-specific Builder manifestation; the Builder trigger recognizes both traits.
+The allowed-pair graph is triangle-free. That preserves naturally emergent dual-Rate leaders—including Miner + Lifeworker and Builder + Lifeworker—while each allowed pair still opposes every possible third ordinary Rate. Existing dual-Rate leaders are not stripped or normalized.
 
-## Assignment
+Builder Security and Promethean are retained as non-random specializations rather than ordinary Rate identities. Promethean remains an elite Warrior-Servant case.
 
-Rates are normal initial leader traits: they are selectable for an eligible starting ruler and randomized for eligible organic Forerunner leaders. Mutual opposition enforces one Rate without an event-based assignment system.
+## Ruler and agenda identities
 
-## Authority and council
+Each ordinary Rate has a distinct First Councilor effect and a corresponding agenda. Builders focus solely on rapid, inexpensive construction; Engineers on upkeep, engineering, and cheaper ships; Juridicals on administration rather than Mantle doctrine; and Interpreters own the Mantle-specific governance identity.
 
-`auth_forerunner_ecumene` is declared in Stellaris's required `common/governments/authorities` folder and uses `oligarchic_election`, an 1100-year term, and 100-year variance. The existing preset remains valid under vanilla oligarchy; the custom authority is available in empire creation. Rate-specific offices require their Rate trait, while the visible council remains a small cabinet rather than a claim to represent the entire Ecumene Council.
+Theoretical rulers, Theoretical Primacy, and Unbounded Inquiry use the engine's category modifiers for Rare and Dangerous technology draw chance plus research alternatives. This avoids a hardcoded technology-ID list. These modifiers improve which options become available, including the pool seen by research automation.
 
-## Validation performed
+Stellaris does not expose a narrow global hook for rescoring automated research choices after options have been drawn. Implementing a stronger post-draw bias would require overriding individual technology weights or a broad automation definition. That unsafe portion is intentionally deferred.
 
-- Inspected dependency definitions for its generic trait, specialist traits, policy, government, councilors, civics, on-actions, startup events, preset, icons, and supported version.
-- Searched this mod for duplicate IDs and unintended vanilla-definition replacements; only documented dependency IDs are repeated.
-- Verified all custom localization keys have matching definitions and all custom trait references are declared.
+## Rate Primacy
 
-## Remaining runtime check
+All eleven ordinary Rates have Primacy options. Effects are deliberately moderate and represent institutional influence; they do not prevent other Rates from generating, serving on the Council, or retaining their traits. Agenda AI weights respond to both the current Primacy flag and the ruler's Rate, while all Rate agendas remain available to the player.
 
-Run Stellaris with `-debug_mode`, start the Forerunner Ecumene, and inspect `error.log` plus the leader pool. A local 4.4.6 game installation was not available here, so engine parsing and UI placement require that final in-game pass.
+## Names and localization
+
+The Forerunner namelist now contains more than 150 leader names spread across poetic statement-names, verb/dedication forms, declarative generational forms, court or craft titles, and shorter ceremonial names. Existing canonical names are preserved.
+
+English localization explicitly covers the authority, government, ruler title, every Rate trait, every Rate Primacy option, all Council positions defined by the submod, all agendas, and all agenda finish modifiers. This prevents raw `leader_trait_*`, policy-option, agenda, and government identifiers from appearing in the English UI.
+
+## Validation targets
+
+- Clausewitz brace and quote balance for every `.txt`, `.gfx`, and `.yml` file.
+- Every custom trait reference resolves to a declared trait.
+- Every custom agenda finish modifier resolves to a declared static modifier.
+- Every custom trait, policy option, agenda, authority, government, and councilor has an English localization key.
+- No `requires_governments` member is present on Rate traits; that member caused the earlier trait-reader crash.
+
+An in-game 4.4.6 smoke test is still required for final engine/UI confirmation because no local Stellaris installation is available in this workspace.

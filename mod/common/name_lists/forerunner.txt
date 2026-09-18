@@ -32,10 +32,88 @@ forerunner = {
 	character_names = {
 		default = {
 			full_names = {
-				Bornstellar IsoDidact Ur-Didact Librarian Faber Catalog Haruspis Chant-to-Green
-				"Bitterness-of-the-Vanquished" "Endurance-of-Will" "Keeper-of-Tools"
+				# Canonical names retained from the dependency and earlier compatibility list.
+				"Bornstellar" "IsoDidact" "Ur-Didact" "Librarian" "Faber" "Catalog" "Haruspis"
+				"Chant-to-Green" "Bitterness-of-the-Vanquished" "Endurance-of-Will" "Keeper-of-Tools"
+
+				# Poetic statement-names.
+				"Ash-of-Forgotten-Dawns" "Beacon-of-the-Last-Horizon" "Breath-of-Quiet-Worlds"
+				"Burden-of-Seven-Skies" "Cinder-of-Ancient-Light" "Clarity-of-the-Open-Void"
+				"Crown-of-Gilded-Rain" "Dawn-of-Unbroken-Memory" "Dream-of-Distant-Shores"
+				"Echo-of-Patient-Stone" "Ember-of-the-First-Sun" "Grace-of-Silent-Orbits"
+				"Heart-of-Mended-Worlds" "Honor-of-the-Hollow-Moon" "Light-of-Remembered-Seas"
+				"Measure-of-Endless-Ages" "Mercy-of-the-Last-Garden" "Oath-of-Burnished-Iron"
+				"Promise-of-a-Gentle-Sun" "Remnant-of-Blue-Fire" "Resolve-of-the-Deep-Court"
+				"Seed-of-a-Thousand-Springs" "Silence-of-Crystal-Waters" "Song-of-the-Patient-Stars"
+				"Splendor-of-Distant-Thunder" "Strength-of-Broken-Mountains" "Thread-of-Living-Gold"
+				"Truth-of-the-Empty-Sky" "Vigil-of-the-Outer-Dark" "Voice-of-the-Farthest-Ring"
+				"Witness-of-Returning-Light" "Memory-of-Clouded-Suns" "Shadow-of-Quiet-Engines"
+				"Radiance-of-the-Inner-Court" "Patience-of-Graven-Stone" "Depth-of-Uncounted-Seas"
+				"Sorrow-of-the-Second-Dawn" "Joy-of-Awakened-Gardens" "Law-of-the-Silent-Bridge"
+				"Fire-of-Tempered-Mercy" "Hope-of-the-Ninth-Horizon" "Whisper-of-Shattered-Ice"
+				"Keeper-of-the-Last-Archive" "Architect-of-Sunless-Cities" "Judge-of-Patient-Stars"
+				"Speaker-for-the-Hidden-Court" "Guardian-of-Unfading-Names" "Miner-of-the-Burning-Deep"
+				"Weaver-of-Ten-Thousand-Tales" "Interpreter-of-the-Quiet-Mantle"
+
+				# Verb and dedication forms.
+				"Chant-to-Dawn" "Chant-to-Stone" "Chant-to-the-First-Rain" "Listens-to-Silence"
+				"Listens-to-Worlds" "Walks-Between-Suns" "Walks-the-Golden-Path"
+				"Speaks-for-Still-Waters" "Speaks-to-Patient-Machines" "Sings-to-Returning-Light"
+				"Sings-the-Memory-of-Earth" "Binds-the-Broken-Circle" "Builds-Beyond-the-Horizon"
+				"Carries-the-Weight-of-Ages" "Counts-the-Falling-Stars" "Dreams-Beneath-Glass"
+				"Guards-the-Unwritten-Law" "Hears-the-Voice-of-Orbits" "Keeps-the-Quiet-Flame"
+				"Knows-the-Shape-of-Time" "Measures-the-Depth-of-Night" "Mends-the-Sundered-World"
+				"Remembers-the-First-Sea" "Seeks-the-Unasked-Question" "Shapes-the-Living-Garden"
+				"Tends-the-Last-Forest" "Turns-the-Wheel-of-Heaven" "Waits-at-the-Farthest-Gate"
+				"Watches-the-Sleeping-Sun" "Writes-upon-the-Void" "Answers-with-Quiet-Truth"
+				"Calls-the-Stars-to-Order" "Carries-Light-into-Shadow" "Finds-Paths-Through-Fire"
+				"Gathers-the-Fragments-of-Time" "Holds-the-Course-of-Worlds" "Names-the-Unnumbered"
+				"Preserves-What-Time-Forgets" "Questions-the-Forbidden-Dark" "Returns-Life-to-Ash"
+
+				# Declarative and generational forms.
+				"Born-of-Quiet-Thunder" "Born-under-Seven-Moons" "Born-to-Mend-the-World"
+				"Brightmind-Makes-Order-Endure" "Calmwater-Makes-Gardens-Flourish"
+				"Deepstone-Makes-Foundations-Last" "Farwalker-Makes-Horizons-Near"
+				"Firstlight-Makes-Memory-Whole" "Goldenvoice-Makes-Councils-Listen"
+				"Gravemind-Makes-Questions-Bloom" "Highforge-Makes-Cities-Eternal"
+				"Kindhand-Makes-Life-Abundant" "Longmemory-Makes-History-Live"
+				"Openheart-Makes-Peace-Endure" "Patientlaw-Makes-Judgment-True"
+				"Quietengine-Makes-Systems-Endure" "Silverthread-Makes-Stories-One"
+				"Starminer-Makes-Worlds-Awake" "Strongshield-Makes-Borders-Safe"
+				"Trueword-Makes-the-Mantle-Clear" "Worldshaper-Makes-Mountains-Kneel"
+				"Dawnseeker-Finds-the-Hidden-Way" "Dustkeeper-Holds-the-Ancient-Record"
+				"Greenwarden-Tends-the-Open-Hand" "Ironservant-Stands-Before-the-Storm"
+				"Lawbearer-Weighs-the-Silent-Claim" "Loreweaver-Binds-the-Scattered-Past"
+				"Nighttheorist-Asks-What-Must-Not-Be" "Plasma-Rider-Courts-the-Living-Sun"
+				"Stonewright-Raises-the-Endless-Spire"
+
+				# Court, craft, and personal styles.
+				"Axiom of Reconciliation" "Bearer of the Third Seal" "Bright Alloy"
+				"Calm Deliberation" "Cartographer of Echoes" "Custodian of Gentle Worlds"
+				"Distant Concord" "First Pattern" "Forge Without End" "Garden's Advocate"
+				"Golden Measure" "Gracious Inquiry" "Lasting Accord" "Living Testament"
+				"Master of Quiet Engines" "Patient Verdict" "Principle of Mercy"
+				"Question Before Dawn" "Record Without End" "Resonant Counsel"
+				"Scholar of Lost Causes" "Second Foundation" "Steady Hand of Law"
+				"Steward of Open Skies" "The Unfinished Proof" "Voice Before Judgment"
+				"Warden of Common Memory" "Witness to Green" "Worlds in Balance"
+				"Keeper of Small Truths"
+
+				# Short ceremonial names prevent the pool becoming one repeated construction.
+				"Axiarch" "Brightglass" "Calmstone" "Deepcurrent" "Dawnwright" "Farlistener"
+				"Firstecho" "Goldenshade" "Gravitas" "Highcant" "Kindledust" "Lawkeeper"
+				"Longsight" "Memorywell" "Nightmeasure" "Openhand" "Patientforge" "Quietarc"
+				"Rainkeeper" "Silvervoice" "Starward" "Stillwater" "Stonecant" "Sunweaver"
+				"Threadkeeper" "Truebalance" "Voidlistener" "Worldmender" "Greenmeasure" "Ironmemory"
 			}
-			regnal_full_names = { IsoDidact Ur-Didact Librarian Faber }
+			regnal_full_names = {
+				"IsoDidact" "Ur-Didact" "Librarian" "Faber" "Bornstellar"
+				"Firstlight-Makes-Memory-Whole" "Highforge-Makes-Cities-Eternal"
+				"Goldenvoice-Makes-Councils-Listen" "Patientlaw-Makes-Judgment-True"
+				"Trueword-Makes-the-Mantle-Clear" "Voice-of-the-Farthest-Ring"
+				"Radiance-of-the-Inner-Court" "Keeper-of-the-Last-Archive"
+				"Axiom of Reconciliation" "Lasting Accord" "Worlds in Balance"
+			}
 		}
 	}
 }

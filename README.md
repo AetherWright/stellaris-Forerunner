@@ -10,23 +10,23 @@ Place the `mod` directory beside the relevant `.mod` launcher descriptor, enable
 
 - Adds `auth_forerunner_ecumene`: oligarchic candidate elections, agendas and emergency-election behavior, with a nominal 1,100-year term and 100-year variance.
 - Makes the Ecumene authority available in empire creation while retaining vanilla oligarchy compatibility for the dependency's existing pre-scripted country.
-- Gives organic Forerunner leaders exactly one mutually exclusive Rate through selectable, randomized initial leader traits—no startup events or generated-leader scripting.
-- Uses class-specific mappings: Builders, Miners, Lifeworkers and Engineers serve as Scientists/Officials; Juridicals as Officials; Warrior-Servants, Builder Security and rare Prometheans as Commanders.
-- Reworks `forerunner_rates` into Rate Primacy—an empire-scale policy separate from individual identity.
+- Gives normal organic Forerunner leaders an ordinary Rate through selectable, randomized initial leader traits—no startup events or generated-leader scripting. A triangle-free compatibility graph preserves rare dual-Rate combinations while preventing normal three-Rate stacking.
+- Implements Builders, Miners, Lifeworkers, Juridicals, Warrior-Servants, Engineers, Theoreticals, Historians, Weavers, Speakers, and Interpreters. Builder Security and Promethean remain specializations rather than ordinary Rates.
+- Adds distinct First Councilor effects for all eleven ordinary Rates and eleven Rate-associated Council agendas.
+- Reworks `forerunner_rates` into Rate Primacy—an empire-scale institutional emphasis separate from individual identity.
 - Preserves and re-credentials the dependency's Builder, Miner and Juridical council positions; adds Lifeworker, Engineer and Warrior-Servant offices.
+- Expands the Forerunner leader-name pool with more than 150 canonical and original lore-compatible names across several naming patterns.
 
 ## Intentional dependency overrides
 
-Only `gov_ecumene_council` and `forerunner_rates` are redefined. Their IDs are preserved so the dependency's presets and references remain compatible. No dependency assets, technologies, species traits, civics, or vanilla definitions are copied or broadly overridden.
+`gov_ecumene_council`, `forerunner_rates`, and the dependency's obsolete species-trait file are narrowly redefined. Their public IDs are preserved so presets, saves, and references remain compatible. No vanilla technology, authority, civic, or leader-trait collection is broadly replaced.
 
 ## Compatibility hooks
 
-`is_forerunner_ecumene`, `is_organic_forerunner_leader`, `has_forerunner_rate`, and the individual `is_forerunner_*` Rate triggers are public scripted hooks for submods.
-
-## Deliberate scope
-
-The dependency and reliable high-level canon support the six great Rates represented here. No speculative minor/older Rate names are added. Promethean Knights are intentionally excluded for a future Galactic Paragons-focused extension.
+`is_forerunner_ecumene`, `is_forerunner_oligarchic_government`, `is_organic_forerunner_leader`, `has_forerunner_rate`, and the individual `is_forerunner_*` Rate triggers are public scripted hooks for submods.
 
 ## Engine caveat
 
-Rate traits use the normal initial-leader-trait system. A player can select one appropriate Rate for the starting ruler, while eligible organic Forerunner leaders receive one at random. This avoids brittle UI or lifecycle-event overrides.
+Rate traits use the normal initial-leader-trait system. Rare and Dangerous technology draw modifiers provide a clean category-based Theoretical hook and also improve the set presented to research automation. Stellaris exposes no narrow global hook for changing automated choice scoring after options are drawn; this mod therefore does not overwrite every vanilla technology merely to force that choice.
+
+The custom authority uses the native oligarchic election type, oligarchic election tag, oligarchic ruler council position, factions, and emergency elections. Some vanilla scripts still test the exact `auth_oligarchic` ID. Making every such script recognize a custom authority would require broad vanilla overrides, so the submod provides a public compatibility trigger instead.
